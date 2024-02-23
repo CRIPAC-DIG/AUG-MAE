@@ -2,14 +2,17 @@
 
 # Rethinking Graph Masked Autoencoders through Alignment and Uniformity
 
-Implementation for paper: Rethinking Graph Masked Autoencoders through Alignment and Uniformity
+Implementation for AAAI'24 paper: [Rethinking Graph Masked Autoencoders through Alignment and Uniformity](https://www.arxiv.org/abs/2402.07225).
 
 ## Dependencies
 
-* Python >= 3.7
-* PyTorch >= 1.9.0 
-* dgl >= 0.7.2
-* pyyaml == 5.4.1
+* Python >= 3.9.5
+* PyTorch >= 1.11.0 
+* dgl >= 1.0.0
+* scikit-learn >= 1.0.2
+* PyYAML
+* ogb
+* tqdm
 
 ## Quick Start
 
@@ -46,3 +49,16 @@ python main_graph.py --dataset IMDB-BINARY  --seed 0 --device 0 --use_cfg
 Supported datasets: 
 
 - `IMDB-BINARY`, `IMDB-MULTI`, `PROTEINS`, `MUTAG`,  `COLLAB`,`PTC-MR`,`REDDIT-BINERY`
+
+## Citing
+
+```
+@article{wang2024augmae,
+  author       = {Liang Wang and Xiang Tao and Qiang Liu and Shu Wu and Liang Wang},
+  title        = {Rethinking Graph Masked Autoencoders through Alignment and Uniformity},
+  journal      = {arXiv},
+  volume       = {abs/2402.07225},
+  year         = {2024}
+}
+```
+
