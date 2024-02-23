@@ -1,0 +1,474 @@
+corafull:
+  lr: 0.001
+  lr_f: 0.01
+  num_hidden: 512
+  num_heads: 4
+  num_layers: 2
+  weight_decay: 2e-4
+  weight_decay_f: 1e-4
+  mask_encoder: gat
+  max_epoch_f: 600
+  mask_rate: 0.5
+  encoder: gat
+  decoder: gat
+  uniformity_dim: 128
+  activation: prelu
+  in_drop: 0.2
+  attn_drop: 0.1
+  linear_prob: True
+  loss_fn: sce
+  drop_edge_rate: 0.0
+  optimizer: adam
+  replace_rate: 0.0
+  alpha_l: 3
+  scheduler: True
+  lamda : 1.0
+  belta: 1.0
+  lr_mask: 0.0001
+  max_epoch: 1500
+  emb_dim: 16
+  alpha_0: 0.5
+  gamma: 1.0
+  alpha_T : 1.0
+wikics:
+  lr: 0.001
+  lr_f: 0.01
+  num_hidden: 32
+  num_heads: 2
+  num_layers: 1
+  weight_decay: 2e-4
+  weight_decay_f: 1e-4
+  mask_encoder: gat
+  max_epoch_f: 600
+  mask_rate: 0.5
+  encoder: gat
+  decoder: gat
+  uniformity_dim: 32
+  activation: prelu
+  in_drop: 0.2
+  attn_drop: 0.1
+  linear_prob: True
+  loss_fn: sce
+  drop_edge_rate: 0.0
+  optimizer: adam
+  replace_rate: 0.0
+  alpha_l: 3
+  scheduler: True
+  lamda : 1.
+  belta: 1.0
+  lr_mask: 0.0001
+  max_epoch: 300
+  emb_dim: 16
+  alpha_0: 0.8
+  gamma: 1.0
+  alpha_T : 1.0
+cora:
+  lr: 0.001
+  lr_f: 0.01
+  num_hidden: 512
+  num_heads: 4
+  num_layers: 2
+  weight_decay: 2e-4
+  weight_decay_f: 1e-4
+  mask_encoder: gat
+  max_epoch_f: 300
+  mask_rate: 0.5
+  encoder: gat
+  decoder: gat
+  uniformity_dim: 128
+  activation: prelu
+  in_drop: 0.2
+  attn_drop: 0.1
+  linear_prob: True
+  loss_fn: sce 
+  drop_edge_rate: 0.0
+  optimizer: adam
+  replace_rate: 0.05
+  alpha_l: 3
+  scheduler: True
+  lamda : 0.005 #0.0005
+  belta: 1.0
+  lr_mask: 0.0001
+  max_epoch: 1500
+  emb_dim: 16
+  alpha_0: 1.0 #0.9
+  gamma: 1.0
+  alpha_T : 1.0
+citeseer:
+  lr: 0.001
+  lr_f: 0.01
+  num_hidden: 512
+  num_heads: 2
+  num_layers: 2
+  weight_decay: 2e-5
+  weight_decay_f: 0.01
+  mask_encoder: gat
+  max_epoch_f: 300
+  mask_rate: 0.5
+  encoder: gat
+  decoder: gat
+  uniformity_dim: 128
+  activation: prelu
+  in_drop: 0.2  
+  attn_drop: 0.1
+  linear_prob: True
+  loss_fn: sce
+  drop_edge_rate: 0.0
+  optimizer: adam
+  replace_rate: 0.1
+  alpha_l: 1
+  scheduler: True
+  lamda : 0.0005
+  set_hardepoch: 0
+  belta: 1.
+  lr_mask: 0.0001
+  emb_dim : 16
+  max_epoch: 300
+  alpha_0: 0.9
+  gamma: 1.0
+  alpha_T : 1.0
+pubmed:
+  lr: 0.001
+  lr_f: 0.01
+  num_hidden: 1024
+  num_heads: 4
+  num_layers: 2
+  weight_decay: 1e-5
+  weight_decay_f: 1e-4
+  max_epoch_f: 300
+  mask_rate: 0.75
+  encoder: gat
+  decoder: gat
+  uniformity_dim: 256
+  activation: prelu
+  in_drop: 0.2
+  attn_drop: 0.1
+  linear_prob: True
+  loss_fn: sce
+  drop_edge_rate: 0.0
+  optimizer: adam
+  replace_rate: 0.0
+  alpha_l: 3
+  scheduler: True
+  belta: 0.001
+  lr_mask: 0.0001
+  max_epoch: 1500
+  mask_encoder: gat
+  lamda : 0.0005
+  emb_dim : 16
+  alpha_0: 0.7
+  gamma: 1.0
+  alpha_T : 1.0
+ogbn-arxiv:
+  lr: 0.001
+  lr_f: 0.01
+  num_hidden: 1024
+  num_heads: 4
+  weight_decay: 0
+  weight_decay_f: 5e-4
+  mask_encoder: gat
+  max_epoch: 1000
+  max_epoch_f: 600
+  mask_rate: 0.5
+  drop_edge_rate: 0.5
+  num_layers: 3
+  encoder: gat
+  decoder: gat
+  uniformity_dim: 256
+  activation: prelu
+  in_drop: 0.2
+  attn_drop: 0.1
+  linear_prob: True
+  loss_fn: sce
+  replace_rate: 0.0
+  alpha_l: 3
+  scheduler: True
+  norm: layernorm
+  set_hardepoch: 0
+  belta: 1.
+  lr_mask: 0.0001
+  lamda : 0.00005
+  emb_dim : 16
+  alpha_0: 0.7
+  gamma: 1.0
+  alpha_T : 1.0
+flickr:
+  lr: 0.001
+  lr_f: 0.01
+  num_hidden: 256
+  num_heads: 4
+  num_layers: 2
+  weight_decay: 2e-4
+  weight_decay_f: 1e-4
+  max_epoch_f: 600
+  mask_rate: 0.75
+  uniformity_dim: 64
+  encoder: gat
+  decoder: gat
+  mask_encoder: gat
+  activation: prelu
+  in_drop: 0.2
+  attn_drop: 0.1
+  linear_prob: True
+  loss_fn: sce
+  drop_edge_rate: 0.1
+  optimizer: adam
+  replace_rate: 0.00
+  alpha_l: 3
+  scheduler: True
+  lamda: 0.00005
+  belta: 0.001
+  lr_mask: 0.0001
+  max_epoch: 1500
+  emb_dim: 16
+  alpha_0: 0.0
+  gamma: 1.0
+  alpha_T: 1.0
+ppi:
+  lr: 0.0001
+  lr_f: 0.005
+  num_hidden: 1024
+  num_heads: 4
+  weight_decay: 0
+  weight_decay_f: 0
+  max_epoch: 1000
+  max_epoch_f: 2000
+  mask_rate: 0.5
+  num_layers: 3
+  uniformity_dim: 256
+  encoder: gat
+  decoder: gat
+  activation: prelu
+  in_drop: 0.2
+  loss_fn: sce
+  optimizer: adam
+  replace_rate: 0.1
+  drop_edge_rate: 0.0
+  alpha_l: 3
+  norm: layernorm
+  residual: True
+  scheduler: True
+  linear_prob: True
+  belta: 1.
+  emb_dim: 16
+  lr_mask: 0.0001
+  mask_encoder: gin
+  lamda : 0.00005
+  alpha_0: 0.0
+  gamma: 1.0
+  alpha_T : 0.3
+reddit:
+  lr: 0.001
+  lr_f: 0.005
+  num_hidden: 512
+  num_heads: 2
+  weight_decay: 2e-4
+  weight_decay_f: 0
+  max_epoch: 500
+  max_epoch_f: 500
+  mask_rate: 0.75
+  num_layers: 4
+  encoder: gat
+  decoder: gat
+  activation: prelu
+  in_drop: 0.2
+  loss_fn: sce
+  optimizer: adam
+  replace_rate: 0.15
+  drop_edge_rate: 0.5
+  alpha_l: 3
+  norm: layernorm
+  residual: True
+  scheduler: True
+  linear_prob: True
+  belta: 0.01
+  emb_dim: 16
+  lr_mask: 0.0001
+  mask_encoder: gat
+  lamda : 0.00001
+  set_hardepoch: 0
+  uniformity_dim: 128
+  alpha_0: 0.7
+  gamma: 1.0
+  alpha_T : 1.0
+IMDB-BINARY:
+  lr: 0.00015
+  lr_f: 0.005
+  num_hidden: 512
+  num_heads: 2
+  weight_decay: 0
+  weight_decay_f: 0
+  max_epoch_f: 500
+  mask_rate: 0.5
+  num_layers: 2
+  encoder: gin
+  decoder: gin
+  activation: prelu
+  in_drop: 0.2
+  loss_fn: sce
+  optimizer: adam
+  replace_rate: 0.0
+  drop_edge_rate: 0.0
+  alpha_l: 1
+  norm: batchnorm
+  residual: False
+  scheduler: False
+  linear_prob: True
+  pooling: mean
+  batch_size: 32
+  max_epoch: 60
+  belta: 0.01
+  lr_mask: 0.001
+  emb_dim: 16
+  mask_encoder: gin
+  lamda : 0.001 
+  set_hardepoch: 60
+  uniformity_dim: 64
+  alpha_0: 0.0
+  gamma: 1.0
+  alpha_T : 0.6 
+IMDB-MULTI:
+  lr: 0.00015
+  num_hidden: 512
+  num_heads: 2
+  weight_decay: 0
+  mask_rate: 0.5
+  num_layers: 3
+  encoder: gin
+  decoder: gin
+  activation: prelu
+  in_drop: 0.2
+  loss_fn: sce
+  optimizer: adam
+  replace_rate: 0.0
+  drop_edge_rate: 0.0
+  alpha_l: 1
+  norm: batchnorm
+  scheduler: False
+  linear_prob: True
+  pooling: mean
+  batch_size: 32
+  belta: 0.01
+  lr_mask: 0.001
+  max_epoch: 50
+  emb_dim: 16
+  mask_encoder: gin
+  lamda : 0.00005
+  set_hardepoch: 40
+  uniformity_dim: 64
+  alpha_0: 0.0
+  gamma: 1.0
+  alpha_T : 0.6
+PROTEINS:
+  lr: 0.00015
+  num_hidden: 512
+  weight_decay: 0
+  mask_rate: 0.5
+  num_layers: 3
+  encoder: gin
+  decoder: gin
+  activation: prelu
+  in_drop: 0.2
+  loss_fn: sce
+  optimizer: adam
+  drop_edge_rate: 0.0
+  alpha_l: 1
+  norm: batchnorm
+  scheduler: False
+  linear_prob: True
+  pooling: max
+  batch_size: 32
+  emb_dim: 16
+  max_epoch: 100
+  belta: 0.01
+  lr_mask: 0.001
+  mask_encoder: gin 
+  lamda : 0.001 
+  set_hardepoch: 40
+  uniformity_dim: 64
+  alpha_0: 0.0
+  gamma: 0.8
+  alpha_T : 0.7
+MUTAG:
+  num_hidden: 32
+  num_layers: 5
+  lr: 0.0005
+  weight_decay: 0.00
+  mask_rate: 0.9 
+  drop_edge_rate: 0.0
+  max_epoch: 20
+  encoder: gin
+  decoder: gin
+  activation: prelu
+  loss_fn: sce
+  scheduler: False
+  pooling: sum
+  batch_size: 64
+  alpha_l: 2
+  replace_rate: 0.1
+  norm: batchnorm
+  in_drop: 0.2
+  attn_drop: 0.1
+  belta: 1.0
+  lr_mask: 0.001
+  mask_encoder: gin
+  lamda : 0.001 
+  emb_dim : 16
+  uniformity_dim: 8
+  alpha_0: 0.0  
+  gamma: 0.8
+  alpha_T : 0.5 
+COLLAB:
+  lr: 0.00015
+  weight_decay: 0.0
+  max_epoch: 20
+  num_layers: 2
+  num_hidden: 256
+  mask_rate: 0.75
+  drop_edge_rate: 0.0
+  activation: relu
+  encoder: gin
+  decoder: gin
+  scheduler: True
+  pooling: max
+  batch_size: 32
+  loss_fn: sce
+  norm: batchnorm
+  alpha_l: 1
+  belta: 0.0001
+  lr_mask: 0.001
+  emb_dim: 16
+  mask_encoder: gin
+  lamda : 0.0005
+  set_hardepoch: 20
+  uniformity_dim: 16
+  alpha_0: 0.0
+  gamma: 1.0
+  alpha_T : 0.4
+REDDIT-BINARY:
+  lr: 0.00015
+  weight_decay: 0.0
+  max_epoch: 100
+  mask_rate: 0.75
+  drop_edge_rate: 0.0
+  num_hidden: 512
+  num_layers: 2
+  encoder: gin
+  decoder: gin
+  activation: prelu
+  pooling: sum
+  scheduler: True
+  batch_size: 8
+  replace_rate: 0.1
+  norm: layernorm
+  loss_fn: sce
+  alpha_l: 2
+  belta: 0.01
+  lr_mask: 0.001
+  emb_dim: 16
+  mask_encoder: gin
+  lamda : 0.001
+  uniformity_dim: 128
+  alpha_0: 0.0
+  gamma: 1.0
+  alpha_T : 0.4
