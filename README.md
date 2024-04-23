@@ -1,20 +1,11 @@
-<img src="imgs/model.jpg" alt="model" style="zoom: 40%;" />
-
 # Rethinking Graph Masked Autoencoders through Alignment and Uniformity
 
-Implementation for AAAI'24 paper: [Rethinking Graph Masked Autoencoders through Alignment and Uniformity](https://www.arxiv.org/abs/2402.07225).
+<img src="imgs/model.jpg" alt="model" style="zoom: 40%;" />
 
-## Dependencies
+This is the code for the AAAI'24 Paper: [Rethinking Graph Masked Autoencoders through Alignment and Uniformity](https://www.arxiv.org/abs/2402.07225).
 
-* Python >= 3.9.5
-* PyTorch >= 1.11.0 
-* dgl >= 1.0.0
-* scikit-learn >= 1.0.2
-* PyYAML
-* ogb
-* tqdm
 
-## Quick Start
+## Usage
 
 For quick start, you could run the scripts:
 
@@ -50,7 +41,20 @@ Supported datasets:
 
 - `IMDB-BINARY`, `IMDB-MULTI`, `PROTEINS`, `MUTAG`,  `COLLAB`,`PTC-MR`,`REDDIT-BINERY`
 
-## Citing
+
+## Requirements
+
+- Python >= 3.9.5
+- PyTorch >= 1.11.0 
+- dgl >= 1.0.0
+- scikit-learn >= 1.0.2
+- PyYAML
+- ogb
+- tqdm
+
+## Citation
+
+Please cite our paper if you use the code:
 
 ```
 @article{wang2024augmae,
