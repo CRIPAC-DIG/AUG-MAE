@@ -86,12 +86,12 @@ cora:
   replace_rate: 0.05
   alpha_l: 3
   scheduler: True
-  lamda : 0.005 #0.0005
+  lamda : 0.005
   belta: 1.0
   lr_mask: 0.0001
   max_epoch: 1500
   emb_dim: 16
-  alpha_0: 1.0 #0.9
+  alpha_0: 0.9
   gamma: 1.0
   alpha_T : 1.0
 citeseer:

@@ -57,11 +57,11 @@ Supported datasets:
 Please cite our paper if you use the code:
 
 ```
-@article{wang2024augmae,
+@inproceedings{wang2024augmae,
   author       = {Liang Wang and Xiang Tao and Qiang Liu and Shu Wu and Liang Wang},
   title        = {Rethinking Graph Masked Autoencoders through Alignment and Uniformity},
-  journal      = {arXiv},
-  volume       = {abs/2402.07225},
+  booktitle    = {AAAI},
+  pages        = {15528--15536},
   year         = {2024}
 }
 ```
